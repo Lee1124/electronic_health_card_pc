@@ -1,0 +1,53 @@
+//表格样式
+@import "variables";
+
+.tableTile {
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    .text {
+        font-size: 16px;
+        color: #333;
+        font-weight: 700;
+    }
+}
+
+/deep/ .table-header-style {
+     th{
+        background-color: #F7F7F7!important;
+        color: #999;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+/deep/ .table-row-style {
+    cursor: pointer;
+     .el-table-column--selection .cell{
+        padding: 0 10px;
+    }
+    td {
+        color: #333;
+        font-size: 14px;
+        text-align: center;
+        border: 0;
+        height: 50px;
+        .el-tooltip {
+            margin: 0 auto;
+        }
+    }
+}
+
+/deep/ .table-row-style-2n{
+    td {
+        background-color: #F8F8F8;
+    }
+}
+
+/deep/ .el-table__footer-wrapper tbody td  {
+    text-align: center;
+}
+
+/deep/ td.redColor {
+    color: $red;
+}

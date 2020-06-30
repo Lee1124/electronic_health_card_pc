@@ -1,0 +1,173 @@
+@import "variables";
+@import "eladmin";
+@import 'sidebar';
+body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#app {
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.el-range-separator {
+    box-sizing: content-box;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+div:focus {
+    outline: none;
+}
+//鼠标悬停样式
+.pointer {
+    cursor: pointer;
+}
+ul,
+li,
+p {
+    padding: 0;
+}
+p,
+h3,
+h4 {
+    margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+li {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+}
+
+//无tab切换时候的布局盒子
+// .pc-content {
+//     height: calc(100% - 50px);
+//     overflow: hidden;
+//     padding: 0 0 80px;
+//     box-sizing: border-box;
+//     .pc-content-container {
+//         overflow-y: auto;
+//         padding: 0 24px;
+//         height: 100%;
+//     }
+// }
+
+// //有tab切换时候的布局盒子
+// .tab-page {
+//     height: 100%;
+//     /deep/ .el-tabs {
+//         height: calc(100% - 60px);
+//         .el-tabs__header {
+//             padding: 0 26px;
+//             margin: 0;
+//         }
+//         .el-tabs__content {
+//             height: calc(100% - 64px);
+//             .el-tab-pane {
+//                 height: 100%;
+//             }
+//         }
+//     }
+//     .tab-scroll-container {
+//         height: calc(100% - 70px);
+//         overflow-y: auto;
+//         padding: 0 24px;
+//     }
+//     .tab-scroll-container-nopagination {
+//         height: calc(100% - 20px);
+//     }
+// }
+// // 有tab切换但非内嵌页面时候的布局盒子
+// .tab-onlyOne-page {
+//     height: 100%;
+//     /deep/ .el-tabs {
+//         .el-tabs__header {
+//             padding: 0 26px;
+//             margin: 0;
+//         }
+//     }
+//     .onlyOne-page {
+//         height: calc(100% - 132px);
+//         .tab-scroll-container {
+//             height: calc(100% - 50px);
+//             overflow-y: auto;
+//             padding: 0 24px;
+//         }
+//     }
+// }
+// 分页器
+// .table-pagination {
+//     margin: 20px 26px 0;
+//     box-sizing: border-box;
+// }
+//滚动条样式
+// .scrollbarStyle::-webkit-scrollbar {
+//     width: 4px;
+// }
+// .scrollbarStyle::-webkit-scrollbar-thumb {
+//     background-color: rgba(144, 147, 153, 0.5);
+// }
+
+// .scrollbarStyle::-webkit-scrollbar-track {
+//     background-color: rgba(144, 147, 153, 0.5);
+// }
+
+//不能选中复制
+.notCopy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.clearfix {
+    &:after {
+        display: block;
+        visibility: hidden;
+        clear: both;
+        height: 0;
+        content: "";
+    }
+    & {
+        zoom: 1;
+    }
+}
+
+.geetest_copyright {
+    display: none !important;
+}

@@ -1,0 +1,28 @@
+
+//可混入的样式
+@mixin clearfix{
+    &:after {
+        display: block;
+        visibility: hidden;
+        clear: both;
+        height: 0;
+        content: '';
+    }
+    & {
+        zoom: 1;
+    }
+}
+@mixin Flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//不能选中复制
+@mixin notCopy{
+    -webkit-user-select:none ;
+    -moz-user-select:none;
+}
+@mixin navCommonStyle{
+    width: 100%;
+    transition: all 0.15s;
+}
