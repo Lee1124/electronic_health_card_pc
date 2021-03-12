@@ -15,7 +15,7 @@
     "file-saver": "^2.0.2",
     "js-cookie": "^2.2.1",
     "jsencrypt": "^3.0.0-rc.1",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "node-sass": "^4.14.0",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
